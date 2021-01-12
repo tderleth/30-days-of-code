@@ -1,0 +1,30 @@
+{
+  "name": "30-days-of-code",
+  "version": "1.0.0",
+  "description": "Solutions for 30 Days of Code by HackerRank in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "precommit": "pretty-quick --staged",
+    "test": "jest --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tderleth/30-days-of-code.git"
+  },
+  "author": "Thomas Derleth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tderleth/30-days-of-code/issues"
+  },
+  "homepage": "https://github.com/tderleth/30-days-of-code#readme",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.3.7",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  }
+}
