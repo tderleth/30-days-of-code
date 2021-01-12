@@ -1,12 +1,20 @@
 const processData = require('./index');
 
-const input = 'Welcome to 30 Days of Code!';
-const firstOutput = 'Hello, World.';
-const secondOutput = 'Welcome to 30 Days of Code!';
+const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
 
-test('1: process data', () => {
-  const consoleSpy = jest.spyOn(console, 'log');
-  processData(input);
-  expect(consoleSpy).toHaveBeenCalledWith(firstOutput);
-  expect(consoleSpy).toHaveBeenCalledWith(secondOutput);
+describe('Day 0: Hello world', () => {
+  beforeEach(() => {
+    consoleSpy.mockClear();
+  });
+
+  test('1', () => {
+    const input = 'Welcome to 30 Days of Code!';
+    const firstExpected = 'Hello, World.';
+    const secondExpected = 'Welcome to 30 Days of Code!';
+
+    processData(input);
+
+    expect(console.log).toHaveBeenCalledWith(firstExpected);
+    expect(console.log).toHaveBeenCalledWith(secondExpected);
+  });
 });
