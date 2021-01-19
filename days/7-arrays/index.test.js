@@ -2,7 +2,7 @@ const processData = require('./index');
 
 const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
 
-describe('Day 2: Operators', () => {
+describe('Day 7: Arrays', () => {
   beforeEach(() => {
     consoleSpy.mockClear();
   });

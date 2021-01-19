@@ -2,7 +2,7 @@ const Person = require('./index');
 
 const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
 
-describe('Day 2: Operators', () => {
+describe('Day 4: Class vs. Instance', () => {
   beforeEach(() => {
     consoleSpy.mockClear();
   });
